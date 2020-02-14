@@ -2,5 +2,7 @@
 vue
 vuex 
 vue2-preview
-node 
+node
+express
 axios
+vue-baidu-map
