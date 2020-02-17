@@ -1,6 +1,6 @@
 <template>
   <div class="img1-list">
-    <vue-preview class="ii"
+    <vue-preview
       :list="list"
       :thumbImageStyle="{width: '100%', marginTop: '10px'}"
       :previewBoxStyle="{border: '1px solid #eee'}"

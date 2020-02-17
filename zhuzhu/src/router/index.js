@@ -5,8 +5,11 @@ import newList from '@/components/newList'
 import imgList from '@/components/imgList'
 import proList from '@/components/proList'
 import gouwu from '@/components/gouWu'
-import img from '@/components/img1'
+import img from '@/components/preview'
 import imgL from '@/components/imgL'
+import Map from '@/components/Map'
+import Feedback from '@/components/feedback'
+import Fabiao from '@/components/fabiao'
 import vueAwesomeSwiper from "vue-awesome-swiper"
 import 'swiper/dist/css/swiper.css'
 import "@/assets/ii/iconfont.css"
@@ -44,6 +47,22 @@ export default new Router({
       path: '/prolist',
       name: 'prolist',
       component: proList
+    },
+    {
+      path: '/map',
+      name: 'Map',
+      component: Map
+    },
+    {
+      path: '/feedback',
+      name: 'Feedback',
+      component: Feedback
+    }
+    ,
+    {
+      path: '/fabiao',
+      name: 'Fabiao',
+      component: Fabiao
     }
   ]
 })

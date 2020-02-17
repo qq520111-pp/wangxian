@@ -8,6 +8,12 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from "./store/store.js"
 import VuePreview from 'vue2-preview'
+import BaiduMap from 'vue-baidu-map'
+
+Vue.use(BaiduMap, {
+  /* Visit http://lbsyun.baidu.com/apiconsole/key for details about app key. */
+  ak: 'hzjNbPMGSMGdwjLh343a5vuRnFoGhnkM'
+})
 
 Vue.use(VuePreview)
 Vue.config.productionTip = false

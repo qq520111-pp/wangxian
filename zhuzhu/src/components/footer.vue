@@ -18,7 +18,7 @@ export default {
       msg: [
         { icon: "icon-yemian-copy-copy", text: "首页", r: "/" },
         { icon: "icon-tianqi", text: "天气", r: "/" },
-        { icon: "icon-1", text: "地图", r: "/" },
+        { icon: "icon-1", text: "地图", r: "/map" },
         { icon: "icon-gouwu", text: "购物车", r: "/gouwu?title=购物", a: "" },
         { icon: "icon-wode1", text: "个人中心", r: "/" }
       ],

@@ -10,6 +10,14 @@
         <i :class="['iconfont','block',item.icon]"></i>
         <span>{{item.text}}</span>
       </router-link>
+      <li @click="phone">
+        <i class="iconfont block icon-lunkuodasan-"></i>
+        <span>电话联系</span>
+      </li>
+      <li @click="note">
+        <i class="iconfont block icon-duanxinlianxi"></i>
+        <span>短信联系</span>
+      </li>
     </ul>
   </div>
 </template>
@@ -23,11 +31,17 @@ export default {
         { text: "新闻资讯", icon: "icon-xinwengonggao", path: "newlist" },
         { text: "图片分享", icon: "icon-tupianfenxiang", path: "imglist" },
         { text: "商品展示", icon: "icon-shangpinzhanshi", path: "prolist" },
-        { text: "留言反馈", icon: "icon-liuyanfankui", path: "newlist" },
-        { text: "电话联系", icon: "icon-lunkuodasan-", path: "newlist" },
-        { text: "短信联系", icon: "icon-duanxinlianxi", path: "newlist" }
+        { text: "留言反馈", icon: "icon-liuyanfankui", path: "feedback" }
       ]
     };
+  },
+  methods: {
+    phone() {
+      alert("请联系13421008644");
+    },
+    note() {
+      alert("请联系13421008644");
+    }
   }
 };
 </script>
@@ -38,7 +52,7 @@ export default {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0 0.1rem .1rem;
+  padding: 0 0.1rem 0.1rem;
   background: #fff;
 }
 .msg-list ul li {
@@ -46,7 +60,8 @@ export default {
   width: 32%;
   margin-top: 2%;
   cursor: pointer;
-  padding: 0.1rem 0;box-shadow: 0 0 20px #ddd;
+  padding: 0.1rem 0;
+  box-shadow: 0 0 20px #ddd;
 }
 .msg-list ul li + li {
   margin-left: 1.3%;

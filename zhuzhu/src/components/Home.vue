@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import aa from "@/components/aa";
-import bb from "@/components/bb";
-import cc from "@/components/cc";
+import swiper from "@/components/swiper";
+import msgList from "@/components/msg-list";
+import footer from "@/components/footer";
 
 export default {
   name: "Home",
@@ -26,16 +26,16 @@ export default {
     };
   },
   components: {
-    aa,
-    bb,
-    cc
+    swiper,
+    msgList,
+    footer
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-.home{
+.home {
   display: flex;
   /* flex-wrap: wrap; */
   height: 100vh;
